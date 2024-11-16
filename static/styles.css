@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #032d31, #2a4d4f); /* Gradient from dark teal to a lighter shade */
+  color: #333;
+}
+
+
+.wrapper {
+  width: 80%;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #032d31; /* Green background */
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1, p {
+  text-align: center;
+  color: #fff; /* White text */
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+.accordion {
+  background-color: #0a4e54; /* Darker green for accordion button */
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 1.5rem 2.5rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.accordion i {
+  font-size: 1.4rem;
+}
+
+.accordion:hover, .active {
+  background-color: #366b6b; /* Even darker green on hover */
+}
+
+.pannel {
+  display: none;
+  padding: 1.5rem 2.5rem;
+  background-color: #e8f5e9; /* Light green for panel background */
+  border-radius: 6px;
+  margin-bottom: 1rem;
+}
+
+.pannel p {
+  color: #333;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.faq {
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.faq.active .pannel {
+  display: block;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

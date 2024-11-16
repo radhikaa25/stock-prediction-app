@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions</title>
+    <link rel="stylesheet" type="text/css"  href="{{ url_for('static', filename='styles.css') }}">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    
+    <div class="wrapper">
+      <p>The Begninning of a New Asset class</p>
+      <h1>Frequently Asked Questions</h1>
+
+      <div class="faq">
+        <button class="accordion">
+          What is RRS?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            **RRS – Real-time Stock Market Prediction App**
+
+RRS is a sophisticated stock market prediction app that uses machine learning algorithms and real-time data to forecast stock prices and trends. It provides accurate, up-to-the-minute predictions, helping users make informed investment decisions. Key features include real-time stock predictions, an intuitive analytics dashboard, customizable prediction models, risk management tools, and timely alerts for market changes. The app is designed to assist both novice and experienced traders in managing their portfolios and maximizing returns with accurate, data-driven insights.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How accurate are your predictions?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Our predictions strive to provide insightful forecasts based on historical data and sophisticated algorithms. While we aim for accuracy, it's essential to understand that stock market predictions inherently carry uncertainties, and results may vary.
+
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How often are predictions updated?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            We update our predictions regularly to reflect the latest market data and trends. The frequency of updates depends on market volatility and other relevant factors.
+
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+         Can i trust the predictions provided by your website?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            While we strive for accuracy, no prediction model can guarantee precise outcomes. We encourage users to use our predictions as one of many tools for informed decision-making and to conduct their own research.
+
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How often are predictions updated?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            We update our predictions regularly to reflect the latest market data and trends. The frequency of updates depends on market volatility and other relevant factors.
+
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          How do I interpret the predictions provided on your website?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            We provide explanations and analysis alongside our predictions to help users understand the underlying factors and trends influencing the forecasts. Additionally, we offer educational resources to assist users in interpreting and utilizing our predictions effectively.
+
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+    
+  </body>
+</html>
